@@ -119,12 +119,28 @@ Engineering accounts of real multi-agent Claude deployments, with architecture d
 
 ## Talks, Courses, and Books
 
-Video lectures, structured courses, and books focused on multi-agent LLM systems.
+Video lectures and structured courses focused on multi-agent LLM systems. Listed alphabetically.
+
+- [AI Agentic Design Patterns with AutoGen](https://learn.deeplearning.ai/courses/ai-agentic-design-patterns-with-autogen) - DeepLearning.AI course taught by AutoGen creators on multi-agent design patterns.
+- [Multi AI Agent Systems with crewAI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/) - DeepLearning.AI course by CrewAI founder on role, tool, and memory patterns in agent crews.
+- [Practical Multi AI Agents and Advanced Use Cases with crewAI](https://www.deeplearning.ai/short-courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/) - Advanced crewAI course covering real application architectures and production agent patterns.
 
 ## Community
 
 Active spaces where multi-agent LLM practitioners gather.
 
+- [r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/) - Subreddit for Claude users, including threads on subagents, orchestration, and multi-agent setups.
+- [AutoGen GitHub Discussions](https://github.com/microsoft/autogen/discussions) - Official forum for AutoGen architecture questions, multi-agent design, and framework updates.
+- [CAMEL-AI Community](https://github.com/camel-ai/camel?tab=readme-ov-file#community) - Research community Discord and forum for multi-agent systems built on CAMEL.
+
 ## Related Lists
 
 Adjacent awesome lists with honest scope descriptions. Cited openly, including direct competitors.
+
+- [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators) - Curated orchestrators across Claude, Codex, Gemini, and Cursor; not Claude-specific.
+- [e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) - Broad agent ecosystem index; less actively maintained since mid-2023.
+- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) - Comprehensive Claude Code resources including skills, hooks, orchestrators, and subagent collections.
+- [kyegomez/awesome-multi-agent-papers](https://github.com/kyegomez/awesome-multi-agent-papers) - Compilation of multi-agent research papers; broader and model-agnostic.
+- [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Curated MCP servers index across languages and integrations.
+- [VoltAgent/awesome-ai-agent-papers](https://github.com/VoltAgent/awesome-ai-agent-papers) - Weekly-updated 2024–2026 AI agent papers covering memory, evaluation, and workflows.
+- [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) - 100+ Claude Code subagents organized by domain; single-session focus.
