@@ -21,11 +21,28 @@ A curated list of frameworks, patterns, protocols, and case studies for multi-ag
 
 ## Foundational Reading
 
-Primary sources from Anthropic and seminal multi-agent LLM papers that establish the concepts behind this list.
+Primary sources from Anthropic and seminal multi-agent LLM papers that establish the concepts behind this list. Listed chronologically.
+
+- [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) - Interleaves reasoning traces with tool actions; baseline for tool-using agent orchestration. (ICLR 2023)
+- [CAMEL: Communicative Agents for Mind Exploration](https://arxiv.org/abs/2303.17760) - Cooperative role-playing via inception prompting; first scalable two-agent coordination paper. (NeurIPS 2023)
+- [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) - Twenty-five LLM agents simulate daily life with memory, reflection, and planning. (UIST 2023)
+- [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651) - Generator, critic, and refiner roles within one model; defines the reflection pattern. (NeurIPS 2023)
+- [Improving Factuality and Reasoning via Multiagent Debate](https://arxiv.org/abs/2305.14325) - Multiple LLM instances debate over rounds to improve factuality and reasoning. (ICML 2024)
+- [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) - Framework for conversable multi-agent chat with customizable roles and tool access. (ICLR 2024)
+- [MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352) - SOP-encoded multi-agent software company with product manager, architect, and engineer roles. (ICLR 2024)
+- [Mixture-of-Agents Enhances Large Language Model Capabilities](https://arxiv.org/abs/2406.04692) - Layered LLM ensemble where each layer's agents read the previous layer's outputs. (2024)
+- [How We Built Our Multi-Agent Research System](https://www.anthropic.com/engineering/built-multi-agent-research-system) - Anthropic's engineering account of running parallel Claude orchestrator-worker research agents. (2025)
 
 ## Multi-Agent Patterns and Architectures
 
-Canonical references for each coordination pattern, one to three entries per pattern.
+Canonical references for each coordination pattern. One to three entries per pattern map the pattern to its primary implementation reference.
+
+- [Orchestrator-Worker](https://www.anthropic.com/engineering/built-multi-agent-research-system) - Lead Claude plans and spawns parallel subagents; Anthropic's own production writeup defines the pattern.
+- [Supervisor with Tool Routing](https://github.com/langchain-ai/langgraph/blob/main/docs/docs/tutorials/multi_agent/agent_supervisor.md) - Supervisor node routes to specialized agents via tool calls; reference implementation in LangGraph.
+- [Multi-Agent Debate](https://arxiv.org/abs/2305.14325) - Multiple instances independently reason then critique each other over iterative rounds.
+- [Mixture-of-Agents](https://arxiv.org/abs/2406.04692) - Layered aggregation where each layer's agents improve on the previous layer's proposals.
+- [Hierarchical Role-Based](https://arxiv.org/abs/2308.00352) - Structured agent hierarchy with defined SOPs per role; MetaGPT is the canonical implementation.
+- [Reflection and Self-Critique](https://arxiv.org/abs/2303.17651) - Actor produces output; critic proposes revisions; actor refines; loop until quality gate.
 
 ## Orchestration Frameworks
 
