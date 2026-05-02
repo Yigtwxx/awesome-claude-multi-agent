@@ -63,11 +63,23 @@ Tools and libraries that coordinate multiple Claude instances or Claude-compatib
 
 ## Subagent Collections
 
-Curated sets of Claude Code subagents. Links to the collections only; entries are not duplicated here.
+Curated sets of Claude Code subagents. Links to the collections only; contents are not duplicated here. Listed alphabetically.
+
+- [claude-code-templates](https://github.com/davila7/claude-code-templates) - CLI for 100+ agents, slash commands, MCP integrations, and hooks for Claude Code projects.
+- [claude-agents](https://github.com/iannuttall/claude-agents) - Seven focused subagents covering refactor, security, planning, frontend, and mentorship tasks.
+- [claude-code-sub-agents](https://github.com/lst97/claude-code-sub-agents) - 33 specialized subagents including an agent-organizer meta-orchestrator for parallel coordination.
+- [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) - 100+ Claude Code subagents across 10 domain categories with model routing and structured output.
+- [agents](https://github.com/wshobson/agents) - 184 Claude Code subagents and 16 multi-agent workflow orchestrators across development domains.
 
 ## Skills, Hooks, and MCP for Coordination
 
 Claude Code skills, hooks, and MCP servers specifically useful for cross-agent coordination and shared state.
+
+- [Claude Code Sub-Agents Documentation](https://docs.anthropic.com/en/docs/claude-code/sub-agents) - Official specification for `.claude/agents/` subagent definitions with YAML frontmatter and tool gating.
+- [Claude Code Advanced Patterns](https://resources.anthropic.com/hubfs/Claude%20Code%20Advanced%20Patterns_%20Subagents,%20MCP,%20and%20Scaling%20to%20Real%20Codebases.pdf) - Anthropic-authored guide to subagents, MCP, and scaling Claude Code across real codebases.
+- [basic-memory](https://github.com/basicmachines-co/basic-memory) - Local-first Markdown knowledge base with MCP integration for persistent cross-agent state.
+- [MCP Reference Servers](https://github.com/modelcontextprotocol/servers) - Official MCP server implementations including Memory (knowledge graph) and Sequential Thinking.
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Curated index of MCP servers across providers and languages; starting point for coordination tooling.
 
 ## Memory, State, and Communication
 
