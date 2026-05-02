@@ -102,11 +102,20 @@ Benchmarks and eval suites that measure multi-agent system quality, reliability,
 
 ## Research Papers
 
-High-impact recent work on multi-agent LLMs. For a broader survey see [kyegomez/awesome-multi-agent-papers](https://github.com/kyegomez/awesome-multi-agent-papers) and [VoltAgent/awesome-ai-agent-papers](https://github.com/VoltAgent/awesome-ai-agent-papers).
+High-impact recent work on multi-agent LLMs not already listed in [Foundational Reading](#foundational-reading). For a broader survey see [kyegomez/awesome-multi-agent-papers](https://github.com/kyegomez/awesome-multi-agent-papers) and [VoltAgent/awesome-ai-agent-papers](https://github.com/VoltAgent/awesome-ai-agent-papers).
+
+- [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924) - Multi-agent software company pipeline with communicative dehallucination to reduce cross-role errors. (ACL 2024)
+- [AgentVerse: Facilitating Multi-Agent Collaboration](https://arxiv.org/abs/2308.10848) - Framework studying emergent social behaviors and dynamic team assembly in multi-agent settings. (ICLR 2024)
+- [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073) - Two-model RLAIF loop where a critique model revises an actor; foundational Anthropic actor-critic paper. (2022)
+- [Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training](https://arxiv.org/abs/2401.05566) - Shows deceptive agent behaviors survive safety fine-tuning; key multi-agent trust and safety result. (2024)
+- [OpenHands: An Open Platform for AI Software Developers](https://arxiv.org/abs/2407.16741) - Agent platform with AgentDelegateAction enabling nested multi-agent software-development workflows. (ICLR 2025)
 
 ## Case Studies and Production Postmortems
 
-Engineering accounts of real multi-agent Claude deployments, with details on architecture and lessons learned.
+Engineering accounts of real multi-agent Claude deployments, with architecture details and lessons learned. New entries welcome via PR — see [contributing.md](contributing.md).
+
+- [How We Built Our Multi-Agent Research System](https://www.anthropic.com/engineering/built-multi-agent-research-system) - Anthropic describes parallel Claude orchestrator-worker architecture, prompting, and failure modes. (2025)
+- [Claude Code Advanced Patterns: Subagents, MCP, and Scaling](https://resources.anthropic.com/hubfs/Claude%20Code%20Advanced%20Patterns_%20Subagents,%20MCP,%20and%20Scaling%20to%20Real%20Codebases.pdf) - Anthropic's practitioner guide to real-codebase multi-agent patterns with Claude Code and MCP. (2025)
 
 ## Talks, Courses, and Books
 
