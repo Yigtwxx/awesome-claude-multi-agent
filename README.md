@@ -85,9 +85,20 @@ Claude Code skills, hooks, and MCP servers specifically useful for cross-agent c
 
 Shared memory layers, inter-agent messaging protocols, and persistent state systems designed for multi-agent stacks.
 
+- [A2A Protocol](https://github.com/a2aproject/A2A) - Open Linux Foundation standard for inter-agent communication across frameworks and organizations.
+- [Letta](https://github.com/letta-ai/letta) - Stateful agent platform with hierarchical memory blocks and archival storage; recommends Claude as backend.
+- [mem0](https://github.com/mem0ai/mem0) - Universal memory layer with user, session, and agent tiers; integrates with CrewAI and LangGraph.
+- [Zep](https://github.com/getzep/zep) - Temporal knowledge-graph memory platform for agents with Graph RAG and session context management.
+
 ## Evaluation and Benchmarks
 
-Benchmarks and eval suites that measure multi-agent system quality, reliability, and collaboration.
+Benchmarks and eval suites that measure multi-agent system quality, reliability, and task completion.
+
+- [AgentBench](https://github.com/THUDM/AgentBench) - Eight-environment benchmark measuring LLM-as-agent performance across web, code, and OS tasks. (ICLR 2024)
+- [GAIA](https://arxiv.org/abs/2311.12983) - Real-world general assistant benchmark; humans score 92%, LLM agents roughly 15–30%.
+- [MARBLE](https://github.com/ulab-uiuc/MARBLE) - Benchmarks multi-agent collaboration across star, chain, tree, and graph coordination topologies. (ACL 2025)
+- [τ-bench](https://github.com/sierra-research/tau-bench) - Tool-agent-user benchmark measuring agent reliability with a pass^k metric in realistic domains.
+- [τ²-Bench](https://github.com/sierra-research/tau2-bench) - Dual-control conversational agent benchmark; successor to τ-bench from Sierra Research.
 
 ## Research Papers
 
