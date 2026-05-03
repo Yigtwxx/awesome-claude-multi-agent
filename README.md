@@ -23,7 +23,9 @@ A curated list of frameworks, patterns, protocols, and case studies for multi-ag
 Primary sources from Anthropic and seminal multi-agent LLM papers that establish the concepts behind this list. Listed chronologically.
 
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) - Interleaves reasoning traces with tool actions; baseline for tool-using agent orchestration (ICLR 2023).
+- [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) - Verbal self-reflection between attempts lets an actor agent learn from prior failures across episodes (NeurIPS 2023).
 - [CAMEL: Communicative Agents for Mind Exploration](https://arxiv.org/abs/2303.17760) - Cooperative role-playing via inception prompting; first scalable two-agent coordination paper (NeurIPS 2023).
+- [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://arxiv.org/abs/2303.17580) - LLM controller plans tasks then delegates to specialist Hugging Face models; canonical orchestrator-of-models pattern (NeurIPS 2023).
 - [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) - Twenty-five LLM agents simulate daily life with memory, reflection, and planning (UIST 2023).
 - [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651) - Generator, critic, and refiner roles within one model; defines the reflection pattern (NeurIPS 2023).
 - [Improving Factuality and Reasoning via Multiagent Debate](https://arxiv.org/abs/2305.14325) - Multiple LLM instances debate over rounds to improve factuality and reasoning (ICML 2024).
@@ -48,6 +50,7 @@ Canonical coordination patterns with implementation references. See Foundational
 Tools and libraries that coordinate multiple Claude instances or Claude-compatible agents across processes. Listed alphabetically.
 
 - [AG2](https://github.com/ag2ai/ag2) - Apache-licensed AutoGen community fork providing multi-agent AgentOS primitives and active development.
+- [AgentScope](https://github.com/modelscope/agentscope) - Alibaba's distributed multi-agent platform with message-passing primitives, fault tolerance, and visual workflow studio.
 - [AutoGen](https://github.com/microsoft/autogen) - Microsoft's conversable multi-agent framework; Claude supported via a custom model client extension.
 - [CAMEL](https://github.com/camel-ai/camel) - Research framework for role-playing multi-agent systems with stateful memory and Claude support.
 - [ChatDev](https://github.com/OpenBMB/ChatDev) - Chat-chain platform where agent teams with distinct roles build software end-to-end.
@@ -56,8 +59,11 @@ Tools and libraries that coordinate multiple Claude instances or Claude-compatib
 - [claude-flow](https://github.com/ruvnet/claude-flow) - Claude-centric swarm orchestration with multiple topologies, federation, and consensus protocols.
 - [CrewAI](https://github.com/joaomdmoura/crewAI) - Role-based multi-agent framework with first-class Claude support, crew primitives, and shared memory.
 - [LangGraph](https://github.com/langchain-ai/langgraph) - Stateful graph-based orchestration library supporting supervisor, swarm, and multi-agent patterns.
+- [Mastra](https://github.com/mastra-ai/mastra) - TypeScript framework for agent workflows with multi-agent networks, durable execution, and first-class Claude support.
+- [mcp-agent](https://github.com/lastmile-ai/mcp-agent) - Composable multi-agent framework built on the Model Context Protocol with Claude as a primary backend.
 - [MetaGPT](https://github.com/FoundationAgents/MetaGPT) - SOP-driven software-team simulation; the canonical hierarchical role-based multi-agent implementation.
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Generalist software-developer platform with AgentDelegateAction for hierarchical multi-agent task delegation.
+- [Pydantic AI](https://github.com/pydantic/pydantic-ai) - Type-safe Python agent framework with delegation patterns, graph-based multi-agent flows, and Claude support.
 - [smolagents](https://github.com/huggingface/smolagents) - Lightweight code-first agents library with hierarchical multi-agent support; Claude via LiteLLM.
 
 ## Subagent Collections
@@ -96,6 +102,7 @@ Benchmarks and eval suites that measure multi-agent system quality, reliability,
 - [AgentBench](https://github.com/THUDM/AgentBench) - Eight-environment benchmark measuring LLM-as-agent performance across web, code, and OS tasks (ICLR 2024).
 - [GAIA](https://arxiv.org/abs/2311.12983) - Real-world general assistant benchmark; humans score 92%, LLM agents roughly 15–30%.
 - [MARBLE](https://github.com/ulab-uiuc/MARBLE) - Benchmarks multi-agent collaboration across star, chain, tree, and graph coordination topologies (ACL 2025).
+- [TheAgentCompany](https://arxiv.org/abs/2412.14161) - Benchmark of realistic enterprise software tasks measuring agent performance in a simulated company (2024).
 - [τ-bench](https://github.com/sierra-research/tau-bench) - Tool-agent-user benchmark measuring agent reliability with a pass^k metric in realistic domains.
 - [τ²-Bench](https://github.com/sierra-research/tau2-bench) - Dual-control conversational agent benchmark; successor to τ-bench from Sierra Research.
 
@@ -108,6 +115,7 @@ High-impact recent work on multi-agent LLMs not already listed in Foundational R
 - [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073) - Two-model RLAIF loop where a critique model revises an actor; foundational Anthropic actor-critic paper (2022).
 - [Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training](https://arxiv.org/abs/2401.05566) - Shows deceptive agent behaviors survive safety fine-tuning; key multi-agent trust and safety result (2024).
 - [OpenHands: An Open Platform for AI Software Developers](https://arxiv.org/abs/2407.16741) - Agent platform with AgentDelegateAction enabling nested multi-agent software-development workflows (ICLR 2025).
+- [Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks](https://arxiv.org/abs/2411.04468) - Microsoft's orchestrator coordinating five specialist agents for web, file, and coding tasks (2024).
 
 ## Case Studies and Production Postmortems
 
