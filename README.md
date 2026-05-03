@@ -14,6 +14,7 @@ A curated list of frameworks, patterns, protocols, and case studies for multi-ag
 - [Memory, State, and Communication](#memory-state-and-communication)
 - [Evaluation and Benchmarks](#evaluation-and-benchmarks)
 - [Research Papers](#research-papers)
+- [Case Studies and Production Postmortems](#case-studies-and-production-postmortems)
 - [Talks, Courses, and Books](#talks-courses-and-books)
 - [Community](#community)
 
@@ -107,6 +108,13 @@ High-impact recent work on multi-agent LLMs not already listed in Foundational R
 - [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073) - Two-model RLAIF loop where a critique model revises an actor; foundational Anthropic actor-critic paper (2022).
 - [Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training](https://arxiv.org/abs/2401.05566) - Shows deceptive agent behaviors survive safety fine-tuning; key multi-agent trust and safety result (2024).
 - [OpenHands: An Open Platform for AI Software Developers](https://arxiv.org/abs/2407.16741) - Agent platform with AgentDelegateAction enabling nested multi-agent software-development workflows (ICLR 2025).
+
+## Case Studies and Production Postmortems
+
+Engineering accounts and counter-perspectives on real multi-agent deployments. Community submissions welcome via PR — see [contributing.md](contributing.md).
+
+- [Don't Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents) - Cognition's argument that context-sharing failures make multi-agent unreliable for code editing (2025).
+- [The AI Scientist](https://sakana.ai/ai-scientist/) - Sakana AI's autonomous research pipeline coordinating ideation, experiment, and review agents end-to-end (2024).
 
 ## Talks, Courses, and Books
 
