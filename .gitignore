@@ -1,4 +1,5 @@
 node_modules/
 _workspace/
 
+.claude*
 CLAUDE.md
