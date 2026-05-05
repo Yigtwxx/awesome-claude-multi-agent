@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -20,13 +22,10 @@ jobs:
         with:
           args: --config ./.lychee.toml --no-progress README.md SECURITY.md pitfalls.md showcase.md blogs.md contributing.md code-of-conduct.md
           fail: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Open or update tracking issue on failure
-        if: steps.lychee.outputs.exit_code != '0'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: ${{ steps.lychee.outputs.exit_code != '0' }}
+        shell: bash
         run: |
           MONTH=$(date +%Y-%m)
           TITLE="Stale link audit ${MONTH}"
