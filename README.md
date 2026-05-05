@@ -42,6 +42,7 @@ Canonical coordination patterns with implementation references. See Foundational
 - [Supervisor with Tool Routing](https://langchain-ai.github.io/langgraph/concepts/multi_agent/) - Supervisor node routes to specialized agents via tool calls; reference implementation in LangGraph.
 - [Multi-Agent Debate](https://github.com/composable-models/llm_multiagent_debate) - Multiple instances independently reason then critique each other over iterative rounds.
 - [Mixture-of-Agents](https://github.com/togethercomputer/MoA) - Layered aggregation where each layer's agents improve on the previous layer's proposals.
+- [Blackboard](https://arxiv.org/abs/2507.01701) - Shared workspace where agents with varied roles read and write to a common store until consensus is reached.
 - [Hierarchical Role-Based](https://docs.deepwisdom.ai/) - Structured agent hierarchy with defined SOPs per role; MetaGPT is the canonical implementation.
 - [Reflection and Self-Critique](https://github.com/madaan/self-refine) - Actor produces output; critic proposes revisions; actor refines; loop until quality gate.
 
@@ -93,6 +94,7 @@ Shared memory layers, inter-agent messaging protocols, and persistent state syst
 - [A2A Protocol](https://github.com/a2aproject/A2A) - Open Linux Foundation standard for inter-agent communication across frameworks and organizations.
 - [Letta](https://github.com/letta-ai/letta) - Stateful agent platform with hierarchical memory blocks and archival storage; recommends Claude as backend.
 - [mem0](https://github.com/mem0ai/mem0) - Universal memory layer with user, session, and agent tiers; integrates with CrewAI and LangGraph.
+- [Redis Agent Memory Server](https://github.com/redis/agent-memory-server) - Fast session and long-term memory layer for agents backed by Redis with semantic search and MCP server interface.
 - [Zep](https://github.com/getzep/zep) - Temporal knowledge-graph memory platform for agents with Graph RAG and session context management.
 
 ## Evaluation and Benchmarks
@@ -128,6 +130,7 @@ Engineering accounts and counter-perspectives on real multi-agent deployments. C
 
 Video lectures and structured courses focused on multi-agent LLM systems. Listed alphabetically.
 
+- [AWS re:Invent 2024: Using Multiple Agents for Scalable Generative AI Applications](https://www.youtube.com/watch?v=7pvEYLW1yZw) - AWS session on coordinating multiple specialized agents for enterprise-scale generative AI workloads.
 - [AI Agentic Design Patterns with AutoGen](https://learn.deeplearning.ai/courses/ai-agentic-design-patterns-with-autogen) - DeepLearning.AI course taught by AutoGen creators on multi-agent design patterns.
 - [Multi AI Agent Systems with crewAI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/) - DeepLearning.AI course by CrewAI founder on role, tool, and memory patterns in agent crews.
 - [Practical Multi AI Agents and Advanced Use Cases with crewAI](https://www.deeplearning.ai/short-courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/) - Advanced crewAI course covering real application architectures and production agent patterns.
