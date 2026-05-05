@@ -70,10 +70,10 @@ Tools and libraries that coordinate multiple Claude instances or Claude-compatib
 
 Curated sets of Claude Code subagents. Links to the collections only; contents are not duplicated here. Listed alphabetically.
 
-- [agents](https://github.com/wshobson/agents) - 184 Claude Code subagents and 16 multi-agent workflow orchestrators across development domains.
-- [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) - 100+ Claude Code subagents across 10 domain categories with model routing and structured output.
+- [agents](https://github.com/wshobson/agents) - Collection of 184 Claude Code subagents and 16 multi-agent workflow orchestrators across development domains.
+- [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) - Over 100 Claude Code subagents across 10 domain categories with model routing and structured output.
 - [claude-agents](https://github.com/iannuttall/claude-agents) - Seven focused subagents covering refactor, security, planning, frontend, and mentorship tasks.
-- [claude-code-sub-agents](https://github.com/lst97/claude-code-sub-agents) - 33 specialized subagents including an agent-organizer meta-orchestrator for parallel coordination.
+- [claude-code-sub-agents](https://github.com/lst97/claude-code-sub-agents) - Set of 33 specialized subagents including an agent-organizer meta-orchestrator for parallel coordination.
 - [claude-code-templates](https://github.com/davila7/claude-code-templates) - CLI for 100+ agents, slash commands, MCP integrations, and hooks for Claude Code projects.
 
 ## Skills, Hooks, and MCP for Coordination
