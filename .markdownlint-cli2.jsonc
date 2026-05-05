@@ -1,5 +1,11 @@
 {
   // Complement awesome-lint (structure) with style enforcement.
+  // Exclude non-published files: project instructions, working notes, and GH templates.
+  "ignores": [
+    "CLAUDE.md",
+    "_workspace/**",
+    ".github/**"
+  ],
   "config": {
     "default": true,
     // Long entry descriptions are intentional — do not enforce a line limit.

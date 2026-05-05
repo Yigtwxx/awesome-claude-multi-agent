@@ -6,7 +6,7 @@ Thank you for helping curate this list. This is a **highly selective** list — 
 
 Every entry must follow this exact format:
 
-```
+```text
 - [Name](url) - Description.
 ```
 
