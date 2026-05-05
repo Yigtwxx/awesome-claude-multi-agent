@@ -1,0 +1,39 @@
+name: Stale Link Audit
+
+on:
+  schedule:
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    name: Audit
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config ./.lychee.toml --no-progress README.md SECURITY.md pitfalls.md showcase.md blogs.md contributing.md code-of-conduct.md
+          fail: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Open or update tracking issue on failure
+        if: steps.lychee.outputs.exit_code != '0'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          MONTH=$(date +%Y-%m)
+          TITLE="Stale link audit ${MONTH}"
+          BODY="Monthly link audit detected broken links. Run \`lychee README.md\` locally to inspect. Fix or remove stale entries and open a PR."
+          EXISTING=$(gh issue list --label stale-links --state open --json number --jq '.[0].number // empty')
+          if [ -z "$EXISTING" ]; then
+            gh issue create --title "$TITLE" --body "$BODY" --label stale-links
+          else
+            gh issue comment "$EXISTING" --body "Re-run on ${MONTH}: broken links still detected."
+          fi
