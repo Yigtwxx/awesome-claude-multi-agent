@@ -1,0 +1,20 @@
+{
+  // Complement awesome-lint (structure) with style enforcement.
+  "config": {
+    "default": true,
+    // Long entry descriptions are intentional — do not enforce a line limit.
+    "MD013": false,
+    // Allow duplicate headings in different sections (e.g. "References" in multiple companion docs).
+    "MD024": { "siblings_only": true },
+    // Allow <br> in companion docs; block other inline HTML.
+    "MD033": { "allowed_elements": ["br"] },
+    // Bare URLs must be wrapped in angle brackets or linked.
+    "MD034": true,
+    // Fenced code blocks must declare a language.
+    "MD040": true,
+    // First line of every file must be a top-level heading.
+    "MD041": true,
+    // Emphasis used as headings is a false positive in companion docs.
+    "MD036": false
+  }
+}
