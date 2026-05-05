@@ -15,4 +15,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npx markdownlint-cli2 "**/*.md" "#node_modules"
+      - run: npx markdownlint-cli2 --config ./.github/.markdownlint-cli2.jsonc "**/*.md" "#node_modules"

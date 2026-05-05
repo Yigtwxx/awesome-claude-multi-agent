@@ -20,7 +20,7 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --config ./.lychee.toml --no-progress README.md SECURITY.md pitfalls.md showcase.md blogs.md contributing.md code-of-conduct.md
+          args: --config ./.github/lychee.toml --no-progress README.md SECURITY.md pitfalls.md showcase.md blogs.md contributing.md code-of-conduct.md
           fail: false
 
       - name: Open or update tracking issue on failure
