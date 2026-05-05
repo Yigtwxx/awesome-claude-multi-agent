@@ -36,6 +36,15 @@ An entry earns a spot only if it passes **all** of the following:
 - Duplicate entries or entries already covered by a linked list in the Related Lists section.
 - Entries whose descriptions contain "leverage", "robust", "comprehensive solution", "delve", or equivalent marketing language.
 
+## Companion documents
+
+This repository includes focused companion documents alongside the main README. Each follows the same entry format and quality bar:
+
+- [SECURITY.md](SECURITY.md) — multi-agent attack surface, prompt injection, and trust boundary references.
+- [pitfalls.md](pitfalls.md) — honest counter-perspectives and documented failure modes.
+
+PRs that add entries to companion documents go through the same review as README additions.
+
 ## How to submit an addition
 
 1. Fork the repository.
