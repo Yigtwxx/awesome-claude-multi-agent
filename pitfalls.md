@@ -10,5 +10,6 @@ Multi-agent systems introduce coordination overhead, context fragmentation, and 
 ## Empirical Failure Mode Research
 
 - [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) - Taxonomy of 14 failure modes across system design, inter-agent misalignment, and task verification categories; inter-agent misalignment is the top failure mode (2025).
+- [LLM Multi-Agent Systems: Challenges and Open Problems](https://arxiv.org/abs/2402.03578) - Systematizes unresolved issues in multi-agent LLMs: task allocation, reasoning through debate, layered context, and memory management (2024).
 - [When Single-Agent with Skills Replace Multi-Agent Systems and When They Fail](https://arxiv.org/abs/2601.04748) - Shows single-agent with a skill library matches multi-agent performance at lower cost; identifies a phase-transition scaling limit as library size grows (2026).
 - [Single-agent or Multi-agent Systems? Why Not Both?](https://arxiv.org/abs/2505.18286) - Demonstrates that performance gains from multi-agent over single-agent narrow significantly as underlying model capability improves (2025).
