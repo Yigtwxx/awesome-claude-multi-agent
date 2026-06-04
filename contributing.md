@@ -40,6 +40,7 @@ An entry earns a spot only if it passes **all** of the following:
 
 This repository includes focused companion documents alongside the main README. Each follows the same entry format and quality bar:
 
+- [glossary.md](glossary.md) — short definitions of multi-agent terms used across the list.
 - [SECURITY.md](SECURITY.md) — multi-agent attack surface, prompt injection, and trust boundary references.
 - [pitfalls.md](pitfalls.md) — honest counter-perspectives and documented failure modes.
 
@@ -48,7 +49,7 @@ PRs that add entries to companion documents go through the same review as README
 ## How to submit an addition
 
 1. Fork the repository.
-2. Add your entry in the correct section, maintaining alphabetical order within that section (except Foundational Reading, which is chronological).
+2. Add your entry in the correct section, maintaining alphabetical order within that section (except Foundational Reading and Research Papers, which are chronological).
 3. Open a pull request with the title `Add [Name]` or `Add [Name] to [Section]`.
 4. One entry per PR for significant additions. Small fixes (typos, dead links) can batch multiple changes.
 5. Complete the PR checklist in the pull request template.
