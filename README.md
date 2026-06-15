@@ -38,6 +38,7 @@ Primary sources from Anthropic and seminal multi-agent LLM papers that establish
 - [Mixture-of-Agents Enhances Large Language Model Capabilities](https://arxiv.org/abs/2406.04692) - Layered LLM ensemble where each layer's agents read the previous layer's outputs (2024).
 - [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) - Anthropic's reference patterns for agents: prompt chaining, routing, parallelization, orchestrator-workers, and evaluator-optimizer (2024).
 - [How We Built Our Multi-Agent Research System](https://www.anthropic.com/engineering/built-multi-agent-research-system) - Anthropic's engineering account of running parallel Claude orchestrator-worker research agents (2025).
+- [Building Multi-Agent Systems: When and How to Use Them](https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them) - Anthropic's guidance on the three cases where multiple agents help: context isolation, parallelization, and specialization (2026).
 
 ## Multi-Agent Patterns and Architectures
 
@@ -68,7 +69,8 @@ Tools and libraries that coordinate multiple Claude instances or Claude-compatib
 - [ChatDev](https://github.com/OpenBMB/ChatDev) - Chat-chain platform where agent teams with distinct roles build software end-to-end.
 - [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python) - Anthropic's official Python SDK for building Claude agents with tools, hooks, and MCP servers.
 - [Claude Squad](https://github.com/smtg-ai/claude-squad) - Terminal manager for running multiple parallel Claude Code agents in isolated Git workspaces.
-- [claude-flow](https://github.com/ruvnet/claude-flow) - Claude-centric swarm orchestration with multiple topologies, federation, and consensus protocols.
+- [Claude Swarm](https://github.com/affaan-m/claude-swarm) - Decomposes tasks across parallel Claude Code agents with conflict detection and a rich terminal coordination UI.
+- [Conductor](https://github.com/microsoft/conductor) - Microsoft CLI for defining and running multi-agent workflows on the Anthropic Agents SDK and GitHub Copilot SDK.
 - [CrewAI](https://github.com/joaomdmoura/crewAI) - Role-based multi-agent framework with first-class Claude support, crew primitives, and shared memory.
 - [Dapr Agents](https://github.com/dapr/dapr-agents) - Framework for resilient, stateful multi-agent systems with workflow orchestration on the Dapr runtime.
 - [Google ADK](https://github.com/google/adk-python) - Google's Agent Development Kit for hierarchical multi-agent systems; Claude via LiteLLM and Vertex AI.
@@ -79,11 +81,14 @@ Tools and libraries that coordinate multiple Claude instances or Claude-compatib
 - [mcp-agent](https://github.com/lastmile-ai/mcp-agent) - Composable multi-agent framework built on the Model Context Protocol with Claude as a primary backend.
 - [MetaGPT](https://github.com/FoundationAgents/MetaGPT) - SOP-driven software-team simulation; the canonical hierarchical role-based multi-agent implementation.
 - [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) - Microsoft's successor to AutoGen and Semantic Kernel for multi-agent workflows in Python and .NET.
+- [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) - Teams-first multi-agent orchestration for Claude Code with task routing across specialized agents.
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - Lightweight framework for multi-agent workflows with handoffs and guardrails; Claude via LiteLLM.
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Generalist software-developer platform with AgentDelegateAction for hierarchical multi-agent task delegation.
 - [Pydantic AI](https://github.com/pydantic/pydantic-ai) - Type-safe Python agent framework with delegation patterns, graph-based multi-agent flows, and Claude support.
+- [ruflo](https://github.com/ruvnet/ruflo) - Claude-centric agent meta-harness deploying multi-agent swarms with adaptive memory, federation, and consensus topologies.
 - [smolagents](https://github.com/huggingface/smolagents) - Lightweight code-first agents library with hierarchical multi-agent support; Claude via LiteLLM.
 - [Strands Agents](https://github.com/strands-agents/sdk-python) - AWS model-driven SDK with swarm, graph, and agents-as-tools multi-agent patterns; defaults to Claude on Bedrock.
+- [swarmclaw](https://github.com/swarmclawai/swarmclaw) - Self-hosted agent runtime for autonomous swarms with memory, delegation, scheduling, and MCP tools across many model providers.
 - [Swarms](https://github.com/kyegomez/swarms) - Multi-agent orchestration framework with sequential, concurrent, and hierarchical workflows; Claude via LiteLLM.
 - [VoltAgent](https://github.com/VoltAgent/voltagent) - TypeScript framework for supervisor and subagent multi-agent systems with built-in observability; supports Claude.
 
@@ -95,8 +100,8 @@ Curated sets of Claude Code subagents. Links to the collections only; contents a
 - [agents (contains-studio)](https://github.com/contains-studio/agents) - Department-organized Claude Code subagents spanning engineering, design, marketing, and operations roles.
 - [awesome-claude-agents](https://github.com/vijaythecoder/awesome-claude-agents) - Orchestrated team of Claude Code subagents coordinating as an automated software-development crew.
 - [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) - Over 100 Claude Code subagents across 10 domain categories with model routing and structured output.
-- [claude-agents](https://github.com/iannuttall/claude-agents) - Seven focused subagents covering refactor, security, planning, frontend, and mentorship tasks.
 - [claude-code-sub-agents](https://github.com/lst97/claude-code-sub-agents) - Set of 33 specialized subagents including an agent-organizer meta-orchestrator for parallel coordination.
+- [claude-code-subagents](https://github.com/0xfurai/claude-code-subagents) - Over 100 production-ready domain-specific subagents for Claude Code across languages, frameworks, and infrastructure.
 - [claude-code-templates](https://github.com/davila7/claude-code-templates) - CLI for 100+ agents, slash commands, MCP integrations, and hooks for Claude Code projects.
 
 ## Skills, Hooks, and MCP for Coordination
@@ -121,6 +126,7 @@ Claude Code skills, hooks, and MCP servers specifically useful for cross-agent c
 Shared memory layers, inter-agent messaging, and persistent state systems designed for multi-agent stacks.
 
 - [basic-memory](https://github.com/basicmachines-co/basic-memory) - Local-first Markdown knowledge base with MCP integration for persistent cross-agent state.
+- [claude-peers-mcp](https://github.com/louislva/claude-peers-mcp) - MCP server letting multiple local Claude Code instances discover and message each other ad hoc.
 - [Cognee](https://github.com/topoteretes/cognee) - Memory layer that builds queryable knowledge graphs from agent interactions and documents.
 - [Graphiti](https://github.com/getzep/graphiti) - Library for building real-time, temporally-aware knowledge graphs usable as shared agent memory.
 - [LangMem](https://github.com/langchain-ai/langmem) - LangChain SDK giving agents long-term memory through extraction, consolidation, and cross-session retrieval.
@@ -187,7 +193,11 @@ High-impact recent work on multi-agent LLMs not already listed in Foundational R
 - [Optima: Optimizing Effectiveness and Efficiency for LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2410.08115) - Training framework improving communication efficiency and performance of multi-agent systems (2024).
 - [AFlow: Automating Agentic Workflow Generation](https://arxiv.org/abs/2410.10762) - Automates workflow design with Monte Carlo tree search over code-represented agent workflows (ICLR 2025).
 - [Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks](https://arxiv.org/abs/2411.04468) - Microsoft's orchestrator coordinating five specialist agents for web, file, and coding tasks (2024).
+- [A Survey on LLM-based Multi-Agent System: Recent Advances and New Frontiers in Application](https://arxiv.org/abs/2412.17481) - Surveys recent LLM multi-agent systems across coordination mechanisms and application domains (2024).
 - [Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains](https://arxiv.org/abs/2501.05707) - Specializes a society of models through multi-agent interaction to sustain self-improvement over many rounds (2025).
+- [AgentsNet: Coordination and Collaborative Reasoning in Multi-Agent LLMs](https://arxiv.org/abs/2507.08616) - Benchmarks whether agent networks can self-organize coordination and collaborative reasoning as they scale (2025).
+- [Beyond the Strongest LLM: Multi-Turn Multi-Agent Orchestration vs. Single LLMs on Benchmarks](https://arxiv.org/abs/2509.23537) - Finds multi-turn multi-agent orchestration can outperform the strongest single model on benchmarks (2025).
+- [IMAGINE: Integrating Multi-Agent System into One Model](https://arxiv.org/abs/2510.14406) - Distills multi-agent coordination into a single model for complex reasoning and planning (2025).
 
 ## Case Studies and Production Postmortems
 
@@ -228,11 +238,13 @@ Active spaces where multi-agent LLM practitioners gather.
 Adjacent awesome lists with honest scope descriptions. Cited openly, including direct competitors.
 
 - [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators) - Curated orchestrators across Claude, Codex, Gemini, and Cursor; not Claude-specific.
+- [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) - Large index of Claude Skills, tools, and resources; broad Claude tooling, not multi-agent-specific.
 - [e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) - Broad agent ecosystem index; less actively maintained since mid-2023.
 - [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) - Wide-ranging index of Claude Code resources: skills, hooks, orchestrators, and subagent collections.
 - [Jenqyang/Awesome-AI-Agents](https://github.com/Jenqyang/Awesome-AI-Agents) - Collection of LLM-powered autonomous agents, frameworks, and multi-agent systems; model-agnostic.
 - [kaushikb11/awesome-llm-agents](https://github.com/kaushikb11/awesome-llm-agents) - Curated list of LLM agent frameworks; vendor-agnostic and framework-focused.
 - [kyegomez/awesome-multi-agent-papers](https://github.com/kyegomez/awesome-multi-agent-papers) - Compilation of multi-agent research papers; broader and model-agnostic.
 - [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Large index of Model Context Protocol servers across providers and languages.
+- [rahulvrane/awesome-claude-agents](https://github.com/rahulvrane/awesome-claude-agents) - Meta-index of Claude Code subagent collections, setup guides, and orchestration tutorials.
 - [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) - Runnable single- and multi-agent app examples across models, including Claude; cross-vendor cookbook.
 - [VoltAgent/awesome-ai-agent-papers](https://github.com/VoltAgent/awesome-ai-agent-papers) - Weekly-updated 2024–2026 AI agent papers covering memory, evaluation, and workflows.
