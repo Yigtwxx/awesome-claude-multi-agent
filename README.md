@@ -12,11 +12,14 @@ Companion documents: [glossary](glossary.md) for terminology, [pitfalls](pitfall
 - [Multi-Agent Patterns and Architectures](#multi-agent-patterns-and-architectures)
 - [Orchestration Frameworks](#orchestration-frameworks)
 - [Subagent Collections](#subagent-collections)
+- [Starter Templates and Examples](#starter-templates-and-examples)
 - [Skills, Hooks, and MCP for Coordination](#skills-hooks-and-mcp-for-coordination)
 - [Memory, State, and Communication](#memory-state-and-communication)
 - [Standards and Protocols](#standards-and-protocols)
 - [Evaluation and Benchmarks](#evaluation-and-benchmarks)
+- [Datasets and Environments](#datasets-and-environments)
 - [Observability and Debugging](#observability-and-debugging)
+- [Security, Safety, and Trust](#security-safety-and-trust)
 - [Research Papers](#research-papers)
 - [Case Studies and Production Postmortems](#case-studies-and-production-postmortems)
 - [Talks, Courses, and Books](#talks-courses-and-books)
@@ -47,10 +50,12 @@ Canonical coordination patterns with implementation references. See Foundational
 - [Blackboard](https://arxiv.org/abs/2507.01701) - Shared workspace where agents with varied roles read and write to a common store until consensus is reached.
 - [Dynamic Agent Selection](https://arxiv.org/abs/2310.02170) - Agents are chosen and wired into a communication structure on the fly per task; defined by the DyLAN network.
 - [Hierarchical Role-Based](https://docs.deepwisdom.ai/) - Structured agent hierarchy with defined SOPs per role; MetaGPT is the canonical implementation.
+- [Market-Based Coordination](https://arxiv.org/abs/2511.17621) - Agents act as market participants trading probabilistic beliefs to converge on shared, truthful outcomes.
 - [Mixture-of-Agents](https://github.com/togethercomputer/MoA) - Layered aggregation where each layer's agents improve on the previous layer's proposals.
 - [Multi-Agent Debate](https://github.com/composable-models/llm_multiagent_debate) - Multiple instances independently reason then critique each other over iterative rounds.
 - [Orchestrator-Worker](https://www.anthropic.com/news/building-effective-agents) - Lead agent plans and spawns parallel subagents; defined in Anthropic's agent design patterns guide.
 - [Parallelization and Voting](https://arxiv.org/abs/2402.05120) - Independent agents answer the same query and a majority vote selects the result; accuracy scales with agent count.
+- [Recursive Task Decomposition](https://arxiv.org/abs/2311.05772) - Tasks are decomposed into subtasks only when an agent cannot execute them directly; defined by ADaPT.
 - [Reflection and Self-Critique](https://github.com/madaan/self-refine) - Actor produces output; critic proposes revisions; actor refines; loop until quality gate.
 - [Sequential Handoff](https://developers.openai.com/cookbook/examples/orchestrating_agents) - One agent transfers control and context to a more specialized agent mid-conversation.
 - [Supervisor with Tool Routing](https://langchain-ai.github.io/langgraph/concepts/multi_agent/) - Supervisor node routes to specialized agents via tool calls; reference implementation in LangGraph.
@@ -103,6 +108,14 @@ Curated sets of Claude Code subagents. Links to the collections only; contents a
 - [claude-code-sub-agents](https://github.com/lst97/claude-code-sub-agents) - Set of 33 specialized subagents including an agent-organizer meta-orchestrator for parallel coordination.
 - [claude-code-subagents](https://github.com/0xfurai/claude-code-subagents) - Over 100 production-ready domain-specific subagents for Claude Code across languages, frameworks, and infrastructure.
 - [claude-code-templates](https://github.com/davila7/claude-code-templates) - CLI for 100+ agents, slash commands, MCP integrations, and hooks for Claude Code projects.
+
+## Starter Templates and Examples
+
+Runnable starting points and worked examples for assembling multi-agent Claude systems. Links only; contents are not duplicated. Listed alphabetically.
+
+- [agent-orchestrator-template](https://github.com/shintaro-sprech/agent-orchestrator-template) - Self-evolving Claude Code subagent system that creates, merges, and promotes specialized agents per task.
+- [Anthropic Cookbook Agent Patterns](https://github.com/anthropics/anthropic-cookbook/tree/main/patterns/agents) - Official notebooks implementing orchestrator-workers and related multi-agent patterns with Claude.
+- [Claude Quickstarts](https://github.com/anthropics/claude-quickstarts) - Official runnable Claude projects, including a two-agent autonomous coding example.
 
 ## Skills, Hooks, and MCP for Coordination
 
@@ -163,6 +176,15 @@ Benchmarks and eval suites that measure multi-agent system quality, reliability,
 - [τ-bench](https://github.com/sierra-research/tau-bench) - Tool-agent-user benchmark measuring agent reliability with a pass^k metric in realistic domains.
 - [τ²-Bench](https://github.com/sierra-research/tau2-bench) - Dual-control conversational agent benchmark; successor to τ-bench from Sierra Research.
 
+## Datasets and Environments
+
+Reusable simulation environments and datasets for studying multi-agent coordination, distinct from the scored benchmarks above. Listed alphabetically.
+
+- [AgentSociety](https://github.com/tsinghua-fib-lab/AgentSociety) - Simulator running thousands of LLM-driven agents in a society with economy, social media, and city environments.
+- [Concordia](https://github.com/google-deepmind/concordia) - DeepMind library for generative agent-based models simulating interactions among many LLM-driven entities.
+- [OASIS](https://github.com/camel-ai/oasis) - Social-media simulator scaling LLM-driven agents to one million users for studying group dynamics.
+- [SOTOPIA](https://github.com/sotopia-lab/sotopia) - Open-ended environment where language agents role-play social scenarios and are scored on goal completion (ICLR 2024).
+
 ## Observability and Debugging
 
 Tracing, monitoring, and replay tools for understanding failures in multi-step, multi-agent systems.
@@ -175,6 +197,16 @@ Tracing, monitoring, and replay tools for understanding failures in multi-step, 
 - [OpenLLMetry](https://github.com/traceloop/openllmetry) - OpenTelemetry-based instrumentation for tracing LLM and multi-agent applications across vendors.
 - [Opik](https://github.com/comet-ml/opik) - Open-source tracing, evaluation, and dashboards for LLM applications and agentic workflows.
 - [Weave](https://github.com/wandb/weave) - Weights & Biases toolkit for logging, tracing, and evaluating agentic LLM applications.
+
+## Security, Safety, and Trust
+
+Threats, defenses, and trust evaluations specific to coordinated multi-agent systems. The companion security references cover prompt injection and trust boundaries in more depth. Listed alphabetically.
+
+- [A Survey on Trustworthy LLM Agents: Threats and Countermeasures](https://arxiv.org/abs/2503.09648) - Maps threats and defenses across an agent's reasoning, memory, tools, and interactions with users and other agents (2025).
+- [MAGPIE: Multi-Agent Contextual Privacy Evaluation](https://arxiv.org/abs/2510.15186) - Benchmark of 200 high-stakes tasks testing whether collaborating agents preserve contextual privacy (2025).
+- [Red-Teaming LLM Multi-Agent Systems via Communication Attacks](https://arxiv.org/abs/2502.14847) - Agent-in-the-Middle attack compromises whole systems by intercepting and manipulating inter-agent messages (ACL 2025).
+- [Seven Security Challenges in Cross-domain Multi-Agent LLM Systems](https://arxiv.org/abs/2505.23847) - Identifies seven security challenges that emerge when agents operate across organizational boundaries (2025).
+- [TAMAS: Benchmarking Adversarial Risks in Multi-Agent LLM Systems](https://arxiv.org/abs/2511.05269) - Benchmark evaluating robustness and safety of multi-agent systems across adversarial attack scenarios (2025).
 
 ## Research Papers
 
@@ -195,6 +227,9 @@ High-impact recent work on multi-agent LLMs not already listed in Foundational R
 - [Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks](https://arxiv.org/abs/2411.04468) - Microsoft's orchestrator coordinating five specialist agents for web, file, and coding tasks (2024).
 - [A Survey on LLM-based Multi-Agent System: Recent Advances and New Frontiers in Application](https://arxiv.org/abs/2412.17481) - Surveys recent LLM multi-agent systems across coordination mechanisms and application domains (2024).
 - [Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains](https://arxiv.org/abs/2501.05707) - Specializes a society of models through multi-agent interaction to sustain self-improvement over many rounds (2025).
+- [Multi-Agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322) - Surveys how LLM-based agents coordinate through collaboration mechanisms, structures, types, and protocols (2025).
+- [Multi-agent Architecture Search via Agentic Supernet](https://arxiv.org/abs/2502.04180) - Samples query-dependent multi-agent architectures from a learned probabilistic supernet rather than one fixed design (ICML 2025).
+- [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) - Introduces the MAST taxonomy of fourteen multi-agent failure modes from over a thousand annotated traces (NeurIPS 2025).
 - [AgentsNet: Coordination and Collaborative Reasoning in Multi-Agent LLMs](https://arxiv.org/abs/2507.08616) - Benchmarks whether agent networks can self-organize coordination and collaborative reasoning as they scale (2025).
 - [Beyond the Strongest LLM: Multi-Turn Multi-Agent Orchestration vs. Single LLMs on Benchmarks](https://arxiv.org/abs/2509.23537) - Finds multi-turn multi-agent orchestration can outperform the strongest single model on benchmarks (2025).
 - [IMAGINE: Integrating Multi-Agent System into One Model](https://arxiv.org/abs/2510.14406) - Distills multi-agent coordination into a single model for complex reasoning and planning (2025).
@@ -207,13 +242,17 @@ Engineering accounts and counter-perspectives on real multi-agent deployments. C
 - [Building Agents with the Claude Agent SDK](https://claude.com/blog/building-agents-with-the-claude-agent-sdk) - Anthropic's account of the agent loop, context management, and subagents behind Claude Code (2025).
 - [How to Think About Agent Frameworks](https://www.langchain.com/blog/how-to-think-about-agent-frameworks) - LangChain's analysis of workflow-versus-agent abstractions and context control in multi-agent design (2025).
 - [Context Engineering for AI Agents](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus) - Manus team's lessons on KV-cache, tool masking, and file-based context from building their agent (2025).
+- [Multi-Agent Systems in the LLMOps Database](https://www.zenml.io/llmops-tags/multi-agent-systems) - ZenML's curated collection of real-world multi-agent production deployments across many industries.
+- [What 1,200 Production Deployments Reveal About LLMOps](https://www.zenml.io/blog/what-1200-production-deployments-reveal-about-llmops-in-2025) - ZenML's vendor-neutral analysis of multi-agent orchestration patterns that survive production (2025).
 - [The AI Scientist](https://sakana.ai/ai-scientist/) - Sakana AI's autonomous research pipeline coordinating ideation, experiment, and review agents end-to-end (2024).
 
 ## Talks, Courses, and Books
 
 Video lectures and structured courses focused on multi-agent LLM systems. Listed alphabetically.
 
+- [Agentic Architectural Patterns for Building Multi-Agent Systems](https://books.google.com/books/about/Agentic_Architectural_Patterns_for_Build.html?id=Usa2EQAAQBAJ) - Book of agentic design patterns for coordination, fault tolerance, and hierarchical multi-agent architectures (2026).
 - [AI Agentic Design Patterns with AutoGen](https://learn.deeplearning.ai/courses/ai-agentic-design-patterns-with-autogen) - DeepLearning.AI course taught by AutoGen creators on multi-agent design patterns.
+- [AI Agents in Action](https://www.manning.com/books/ai-agents-in-action) - Manning book on building, orchestrating, and deploying autonomous multi-agent systems (2025).
 - [AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/) - DeepLearning.AI and LangChain course on building agent control flow from scratch and in LangGraph.
 - [AWS re:Invent 2024: Using Multiple Agents for Scalable Generative AI Applications](https://www.youtube.com/watch?v=7pvEYLW1yZw) - AWS session on coordinating multiple specialized agents for enterprise-scale generative AI workloads.
 - [Hugging Face Agents Course](https://huggingface.co/learn/agents-course) - Free course covering agent fundamentals and frameworks (smolagents, LangGraph, LlamaIndex) with hands-on builds.
@@ -229,6 +268,7 @@ Active spaces where multi-agent LLM practitioners gather.
 - [AutoGen GitHub Discussions](https://github.com/microsoft/autogen/discussions) - Official forum for AutoGen architecture questions, multi-agent design, and framework updates.
 - [CAMEL-AI Community](https://github.com/camel-ai/camel?tab=readme-ov-file#community) - Research community Discord and forum for multi-agent systems built on CAMEL.
 - [CrewAI Community Forum](https://community.crewai.com/) - Official forum for CrewAI users discussing crews, flows, and multi-agent application design.
+- [LangChain Forum](https://forum.langchain.com/) - Official community forum for LangChain and LangGraph, including multi-agent architecture discussions.
 - [Latent Space](https://www.latent.space/) - AI engineering newsletter and podcast with recurring coverage of agent and multi-agent architectures.
 - [r/AI_Agents](https://www.reddit.com/r/AI_Agents/) - Subreddit focused on building, orchestrating, and deploying autonomous and multi-agent systems.
 - [r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/) - Subreddit for Claude users, including threads on subagents, orchestration, and multi-agent setups.
@@ -244,6 +284,7 @@ Adjacent awesome lists with honest scope descriptions. Cited openly, including d
 - [Jenqyang/Awesome-AI-Agents](https://github.com/Jenqyang/Awesome-AI-Agents) - Collection of LLM-powered autonomous agents, frameworks, and multi-agent systems; model-agnostic.
 - [kaushikb11/awesome-llm-agents](https://github.com/kaushikb11/awesome-llm-agents) - Curated list of LLM agent frameworks; vendor-agnostic and framework-focused.
 - [kyegomez/awesome-multi-agent-papers](https://github.com/kyegomez/awesome-multi-agent-papers) - Compilation of multi-agent research papers; broader and model-agnostic.
+- [luo-junyu/Awesome-Agent-Papers](https://github.com/luo-junyu/Awesome-Agent-Papers) - Survey-linked collection of LLM agent papers across construction, collaboration, evolution, and security; model-agnostic.
 - [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Large index of Model Context Protocol servers across providers and languages.
 - [rahulvrane/awesome-claude-agents](https://github.com/rahulvrane/awesome-claude-agents) - Meta-index of Claude Code subagent collections, setup guides, and orchestration tutorials.
 - [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) - Runnable single- and multi-agent app examples across models, including Claude; cross-vendor cookbook.
