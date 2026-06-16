@@ -10,6 +10,7 @@ For vulnerabilities or concerns specific to entries in this list, open a [GitHub
 - [Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection Attacks](https://arxiv.org/abs/2302.12173) - First systematic demonstration of indirect prompt injection against real LLM-integrated applications; foundational attack taxonomy (2023).
 - [Prompt Injection](https://simonwillison.net/series/prompt-injection/) - Simon Willison's ongoing series tracking prompt injection attack patterns and defenses; coined the term.
 - [Defeating Prompt Injections by Design](https://arxiv.org/abs/2503.18813) - CaMeL system separates control flow from data flow, providing verifiable prompt injection protection evaluated on AgentDojo (2025).
+- [Design Patterns for Securing LLM Agents against Prompt Injections](https://arxiv.org/abs/2506.08837) - Six design patterns that constrain agents for provable resistance to prompt injection, with case studies (2025).
 - [Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems](https://arxiv.org/abs/2410.07283) - Shows malicious prompts can self-replicate across connected agents like a virus; a multi-agent-specific attack (2024).
 - [AgentDojo: Evaluate Prompt Injection Attacks and Defenses for LLM Agents](https://arxiv.org/abs/2406.13352) - Dynamic benchmark of 97 agent tasks and 629 security cases for testing injection attacks and defenses (2024).
 
