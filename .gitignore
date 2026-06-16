@@ -1,5 +1,6 @@
 node_modules/
 _workspace/
+analiz.md
 
 .claude*
 CLAUDE.md
