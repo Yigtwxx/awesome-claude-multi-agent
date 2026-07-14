@@ -145,6 +145,7 @@ Shared memory layers, inter-agent messaging, and persistent state systems design
 - [LangMem](https://github.com/langchain-ai/langmem) - LangChain SDK giving agents long-term memory through extraction, consolidation, and cross-session retrieval.
 - [Letta](https://github.com/letta-ai/letta) - Stateful agent platform with hierarchical memory blocks and archival storage; recommends Claude as backend.
 - [mem0](https://github.com/mem0ai/mem0) - Universal memory layer with user, session, and agent tiers; integrates with CrewAI and LangGraph.
+- [Open Agent Relay](https://github.com/ShakespeareLabs/open-agent-relay) - Relays bounded local Claude Code capabilities to teammates and agents over a trusted LAN.
 - [Redis Agent Memory Server](https://github.com/redis/agent-memory-server) - Session and long-term memory layer for agents backed by Redis with semantic search and an MCP interface.
 - [Zep](https://github.com/getzep/zep) - Temporal knowledge-graph memory platform for agents with Graph RAG and session context management.
 
