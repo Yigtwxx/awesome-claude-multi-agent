@@ -140,6 +140,7 @@ Shared memory layers, inter-agent messaging, and persistent state systems design
 
 - [basic-memory](https://github.com/basicmachines-co/basic-memory) - Local-first Markdown knowledge base with MCP integration for persistent cross-agent state.
 - [claude-peers-mcp](https://github.com/louislva/claude-peers-mcp) - MCP server letting multiple local Claude Code instances discover and message each other ad hoc.
+- [claw-consensus](https://github.com/tonydzi/claw-consensus) - Propose/counter/accept/commit consensus with a dual-rail message bus and ACK discipline for Claude instances on separate machines.
 - [Cognee](https://github.com/topoteretes/cognee) - Memory layer that builds queryable knowledge graphs from agent interactions and documents.
 - [Graphiti](https://github.com/getzep/graphiti) - Library for building real-time, temporally-aware knowledge graphs usable as shared agent memory.
 - [LangMem](https://github.com/langchain-ai/langmem) - LangChain SDK giving agents long-term memory through extraction, consolidation, and cross-session retrieval.
