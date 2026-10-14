@@ -104,6 +104,7 @@ Maintained libraries, runtimes, and harnesses that coordinate several agents and
 - [ruflo](https://github.com/ruvnet/ruflo) - Claude-centric agent meta-harness deploying multi-agent swarms with adaptive memory, federation, and consensus topologies.
 - [smolagents](https://github.com/huggingface/smolagents) - Lightweight code-first agents library with hierarchical multi-agent support; Claude via LiteLLM.
 - [Strands Agents](https://github.com/strands-agents/harness-sdk) - AWS model-driven SDK for Python and TypeScript with swarm, graph, and agents-as-tools patterns; defaults to Claude on Bedrock.
+- [Superset](https://github.com/superset-sh/superset) - Desktop workspace running Claude Code, Codex, and other CLI agents in parallel Git worktrees, with diff review and pull requests.
 - [swarmclaw](https://github.com/swarmclawai/swarmclaw) - Self-hosted agent runtime for autonomous swarms with memory, delegation, scheduling, and MCP tools across many model providers.
 - [Swarms](https://github.com/kyegomez/swarms) - Multi-agent orchestration framework with sequential, concurrent, and hierarchical workflows; Claude via LiteLLM.
 - [VoltAgent](https://github.com/VoltAgent/voltagent) - TypeScript framework for supervisor and subagent multi-agent systems with built-in observability; supports Claude.
