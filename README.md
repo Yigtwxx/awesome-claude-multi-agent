@@ -91,7 +91,6 @@ Maintained libraries, runtimes, and harnesses that coordinate several agents and
 - [Mastra](https://github.com/mastra-ai/mastra) - TypeScript framework for agent workflows with multi-agent networks, durable execution, and first-class Claude support.
 - [mcp-agent](https://github.com/lastmile-ai/mcp-agent) - Composable multi-agent framework built on the Model Context Protocol with Claude as a primary backend.
 - [MetaGPT](https://github.com/FoundationAgents/MetaGPT) - SOP-driven software-team simulation; the canonical hierarchical role-based multi-agent implementation.
-- [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) - Microsoft's successor to AutoGen and Semantic Kernel for multi-agent workflows in Python and .NET.
 - [Munder Difflin](https://github.com/HarnessMD/munder-difflin) - Electron harness coordinating an office of Claude Code and other CLI agents that message, route, and remember.
 - [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) - Teams-first multi-agent orchestration for Claude Code with task routing across specialized agents.
 - [Omnigent](https://github.com/omnigent-ai/omnigent) - Meta-harness mixing Claude Code, Codex, Cursor, and custom agents in one session under a delegating orchestrator.
