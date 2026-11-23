@@ -66,7 +66,7 @@ Named coordination patterns, each linked to its defining paper or a reference im
 Maintained libraries, runtimes, and harnesses that coordinate several agents and support Claude. Listed alphabetically.
 
 - [AG2](https://github.com/ag2ai/ag2) - Apache-licensed AutoGen community fork providing multi-agent AgentOS primitives and active development.
-- [Agent Orchestrator](https://github.com/Untrivial-ai/agent-orchestrator) - Desktop workspace whose orchestrator plans and delegates work to coding agents in per-task worktrees with a live Kanban.
+- [Agent Orchestrator](https://github.com/OrchestratorInc/agent-orchestrator) - Desktop workspace whose orchestrator plans and delegates work to coding agents in per-task worktrees with a live Kanban.
 - [Agent Squad](https://github.com/2FastLabs/agent-squad) - Python, TypeScript, and Swift framework routing conversations across specialized agents, with a SupervisorAgent for team coordination; supports Anthropic.
 - [AgentScope](https://github.com/agentscope-ai/agentscope) - Alibaba's distributed multi-agent platform with message-passing primitives, fault tolerance, and visual workflow studio.
 - [Agno](https://github.com/agno-agi/agno) - High-performance Python framework for multi-agent teams with memory and knowledge; model-agnostic interface including Claude.
@@ -115,7 +115,6 @@ Curated sets of Claude Code subagents. Links to the collections only; contents a
 - [agency-agents](https://github.com/msitarzewski/agency-agents) - Department-organized agent personas for engineering, marketing, and operations, installable into Claude Code and other harnesses.
 - [agents](https://github.com/wshobson/agents) - Over 200 Claude Code subagents packaged as plugins with multi-agent workflow orchestrators; exportable to other harnesses.
 - [agentsys](https://github.com/agent-sh/agentsys) - Plugin set of 49 agents and 44 skills that compose into structured development pipelines for Claude Code.
-- [awesome-claude-agents](https://github.com/vijaythecoder/awesome-claude-agents) - Orchestrated team of Claude Code subagents coordinating as an automated software-development crew.
 - [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) - Over 160 Claude Code subagents across 10 domain categories with per-agent model routing.
 - [buildwithclaude](https://github.com/davepoon/buildwithclaude) - Plugin marketplace with over 100 Claude Code subagents across 17 categories, including meta-orchestration agents, plus commands and hooks.
 
