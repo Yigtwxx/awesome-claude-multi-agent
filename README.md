@@ -99,6 +99,7 @@ Maintained libraries, runtimes, and harnesses that coordinate several agents and
 - [OpenHands](https://github.com/OpenHands/OpenHands) - Generalist software-developer platform with AgentDelegateAction for hierarchical multi-agent task delegation.
 - [Orca](https://github.com/stablyai/orca) - Desktop and mobile environment fanning one prompt across Claude Code, Codex, and other agents in parallel worktrees.
 - [Paperclip](https://github.com/paperclipai/paperclip) - Self-hosted server and UI orchestrating teams of agents with org charts, heartbeats, budgets, and delegation.
+- [Paradev](https://github.com/ParadevAI/Paradev) - Desktop workspace running Claude Code, Codex, and other CLI agents in parallel Git worktrees, with diff review and pull requests.
 - [Pydantic AI](https://github.com/pydantic/pydantic-ai) - Type-safe Python agent framework with delegation patterns, graph-based multi-agent flows, and Claude support.
 - [ruflo](https://github.com/ruvnet/ruflo) - Claude-centric agent meta-harness deploying multi-agent swarms with adaptive memory, federation, and consensus topologies.
 - [smolagents](https://github.com/huggingface/smolagents) - Lightweight code-first agents library with hierarchical multi-agent support; Claude via LiteLLM.
